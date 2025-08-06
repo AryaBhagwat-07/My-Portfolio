@@ -7,7 +7,8 @@
     <title>Arya Bhagwat - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary-color: #ffa42e;
@@ -491,9 +492,17 @@
         }
 
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
 
         .character-message {
@@ -511,8 +520,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Contact Section */
@@ -607,6 +623,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -617,9 +634,11 @@
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.05);
             }
+
             100% {
                 transform: scale(1);
             }
@@ -830,11 +849,13 @@
         <div class="projects-container">
             <div class="project-card">
                 <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Code Editor Project">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+                        alt="Code Editor Project">
                 </div>
                 <div class="project-content">
                     <h3>Online Code Editor</h3>
-                    <p>A web-based code editor with syntax highlighting for multiple programming languages, built with React and Monaco Editor.</p>
+                    <p>A web-based code editor with syntax highlighting for multiple programming languages, built with
+                        React and Monaco Editor.</p>
                     <div class="project-tags">
                         <span class="project-tag">React</span>
                         <span class="project-tag">JavaScript</span>
@@ -849,11 +870,13 @@
 
             <div class="project-card">
                 <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2070&auto=format&fit=crop" alt="Weather App">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2070&auto=format&fit=crop"
+                        alt="Weather App">
                 </div>
                 <div class="project-content">
                     <h3>Weather Forecast App</h3>
-                    <p>A weather application that displays current weather and forecasts using data from OpenWeatherMap API.</p>
+                    <p>A weather application that displays current weather and forecasts using data from OpenWeatherMap
+                        API.</p>
                     <div class="project-tags">
                         <span class="project-tag">JavaScript</span>
                         <span class="project-tag">API</span>
@@ -868,7 +891,8 @@
 
             <div class="project-card">
                 <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data Visualization">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                        alt="Data Visualization">
                 </div>
                 <div class="project-content">
                     <h3>Data Visualization Dashboard</h3>
@@ -955,7 +979,7 @@
     <!-- Resume Section -->
     <section id="resume">
         <h2 class="section-title">My Resume</h2>
-        
+
         <div class="resume-container">
             <p>Download my complete resume to learn more about my qualifications, experience, and skills.</p>
             <div class="resume-download">
@@ -1110,7 +1134,7 @@
         }, 5000);
 
         // Character interaction
-        character.addEventListener('click', function() {
+        character.addEventListener('click', function () {
             if (characterMessage.style.display === 'block') {
                 characterMessage.style.display = 'none';
             } else {
